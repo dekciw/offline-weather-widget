@@ -1,54 +1,54 @@
-## Offline Weather Widget
+## Офлайн‑виджет погоды
 
-An offline weather widget built with HTML, CSS, and JavaScript.
+Офлайн‑виджет погоды на HTML, CSS и JavaScript.
 
-The project allows users to search for Russian cities and see mock weather data such as temperature, humidity, wind speed, and weather conditions — all without using paid APIs.
+Проект позволяет искать города России и смотреть демонстрационные данные о погоде: температуру, влажность, скорость ветра и тип погоды — без использования платных API.
 
-This project was created as a training exercise to practice working with:
+Проект создан как тренировочное упражнение для практики:
 
-- **DOM manipulation in JavaScript**
-- **Form handling (search by city)**
-- **Conditional rendering (show weather data or "City not found")**
-- **Working with arrays of objects (cities data structure)**
-- **Basic frontend project structure (HTML + CSS + JS + assets)**
+- **Манипуляций с DOM в JavaScript**
+- **Обработки формы (поиск по городу)**
+- **Условного рендеринга (показ данных о погоде или сообщения «Город не найден»)**
+- **Работы с массивами объектов (структура данных городов)**
+- **Базовой структуры фронтенд‑проекта (HTML + CSS + JS + ассеты)**
 
-### Features
+### Возможности
 
-- **✅ Search for a city by name (case-insensitive)**
-- **✅ Display mock weather data:**
-  - City name
-  - Temperature (°C)
-  - Humidity (%)
-  - Wind speed (km/h)
-  - Weather icon (sun, rain, cloud, snow, wind)
-- **✅ Error handling if a city is not found ("City not found" message)**
-- **✅ Fully offline — all data is stored locally in a JavaScript file**
-- **✅ Responsive, minimal UI styled with CSS**
+- **✅ Поиск города по названию (без учета регистра)**
+- **✅ Отображение демонстрационных данных о погоде:**
+  - Название города
+  - Температура (°C)
+  - Влажность (%)
+  - Скорость ветра (км/ч)
+  - Иконка погоды (солнце, дождь, облака, снег, ветер)
+- **✅ Обработка ошибки, если город не найден (сообщение «Город не найден»)**
+- **✅ Полная офлайн‑работа — все данные хранятся локально в JavaScript‑файле**
+- **✅ Адаптивный, минималистичный интерфейс на CSS**
 
-### Project Structure
+### Структура проекта
 
 ```
 project-root
- ┣ 📂 img/                # Weather icons (SVG)
- ┣ 📂 fonts/              # Fonts
- ┣ 📜 index.html          # Main HTML file
- ┣ 📜 style.css           # Styles
- ┣ 📜 script.js           # Main logic
- ┣ 📜 russianWeatherData.js # Array with city weather data
+ ┣ 📂 img/                # Иконки погоды (SVG)
+ ┣ 📂 fonts/              # Шрифты
+ ┣ 📜 index.html          # Основной HTML‑файл
+ ┣ 📜 style.css           # Стили
+ ┣ 📜 script.js           # Основная логика
+ ┣ 📜 russianWeatherData.js # Массив с данными о погоде по городам
 ```
 
-### How It Works
+### Как это работает
 
-1. User enters a city name into the search field.
-2. The app looks for this city in the cities array (`russianWeatherData.js`).
-3. If the city exists, the widget displays weather data (temperature, humidity, wind, icon).
-4. If not, the widget shows "City not found".
+1. Пользователь вводит название города в поле поиска.
+2. Приложение ищет этот город в массиве `cities` (файл `russianWeatherData.js`).
+3. Если город найден — в виджете отображаются данные (температура, влажность, ветер, иконка).
+4. Если нет — показывается сообщение «Город не найден».
 
-### Goals of the Project
+### Цели проекта
 
-- Practice building a frontend app without external APIs.
-- Understand how to work with JavaScript objects and arrays.
-- Learn how to connect multiple JS files using ES Modules.
-- Improve DOM skills (finding elements, updating content dynamically).
+- Практика создания фронтенд‑приложения без внешних API.
+- Понимание работы с объектами и массивами в JavaScript.
+- Подключение нескольких JS‑файлов с помощью ES‑модулей.
+- Улучшение навыков работы с DOM (поиск элементов, динамическое обновление содержимого).
 
 
