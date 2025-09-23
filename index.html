@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Виджет погоды</title>
+		<link rel="stylesheet" href="./fonts/fonts.css" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="page">
+		<main class="main">
+			<section class="card" id="card">
+				<!-- ================= Форма поиска ================= -->
+				<form class="card__form" id="search-form" role="search" action="#" method="get" autocomplete="off">
+					<label class="search" for="q">
+						<input
+							class="search__input"
+							type="text"
+							id="q"
+							name="q"
+							placeholder="Enter city name"
+							aria-label="City name"
+						/>
+						<!-- ================= Кнопка поиска ================= -->
+						<button class="search__btn" type="submit" aria-label="Search">
+							<img class="search__icon" src="./img/search.svg" alt="Поиск" />
+						</button>
+					</label>
+				</form>
+
+				<!-- ================= Контент ================= -->
+				<article class="card__content">
+					<div class="weather">
+						<img class="weather__image" id="weather-image" src="./img/weather.png" alt="Погода" />
+					</div>
+					<div class="temperature">
+						<div class="temperature__value" id="temperature-value">± .. °c</div>
+					</div>
+					<div class="location">
+						<div class="location__city" id="location-city">City</div>
+					</div>
+				</article>
+
+				<!-- ================= Статистика ================= -->
+				<div class="stats">
+					<!-- ================= Влажность ================= -->
+					<div class="stats__item">
+						<div class="stat__icon">
+							<img src="./img/humidity.svg" alt="Влажность" />
+						</div>
+						<div class="stat__text">
+							<div class="stat__value" id="humidity-value">... %</div>
+							<div class="stat__label">Влажность</div>
+						</div>
+					</div>
+					<!-- ================= Скорость ветра ================= -->
+					<div class="stats__item">
+						<div class="stat__icon">
+							<img src="./img/wind.svg" alt="Скорость ветра" />
+						</div>
+						<div class="stat__text">
+							<div class="stat__value" id="wind-value">... km/h</div>
+							<div class="stat__label">Скорость ветра</div>
+						</div>
+					</div>
+				</div>
+				<div id="error-message" class="error"></div>
+			</section>
+		</main>
+	</body>
+</html>
+<script type="module" src="./script.js"></script>
